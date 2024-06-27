@@ -81,8 +81,8 @@ const container = document.querySelector('#cat-container')
 container.innerHTML += `
 <div class="bg-white rounded-lg overflow-hidden shadow-lg">
         <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800">🏆 Daily Superlatives</h3>
-            <hr/>
+            <h3 class="text-xl font-semibold text-gray-800">🏆 Daily Superlatives</h3>
+
             <div class="flex justify-between">
               <p class="text-gray-600 font-bold mt-2">🐵 Chunkiest Monkey: </p>
               <p>${catData.cats.reduce((maxCat, cat) => cat.weight > maxCat.weight ? cat : maxCat).name}</p>
