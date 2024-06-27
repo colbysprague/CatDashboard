@@ -83,10 +83,22 @@ container.innerHTML += `
         <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-800">🏆 Daily Superlatives</h3>
             <hr/>
-            <p class="text-gray-600 mt-2">🐵 Chunkiest Monkey: ${catData.cats.reduce((maxCat, cat) => cat.weight > maxCat.weight ? cat : maxCat).name}</p>
-            <p class="text-gray-600 mt-2">💪 Biggest Gains: 🎲 Fats Domino</p>
-            <p class="text-gray-600 mt-2">📢 Loudest Meows: 🖤 Darth Vader</p>
-            <p class="text-gray-900 mt-2">Last Updated: Thurs Jun 27 @ 3pm</p>
+            <div class="flex justify-between">
+              <p class="text-gray-600 mt-2">🐵 Chunkiest Monkey: </p>
+              <p>${catData.cats.reduce((maxCat, cat) => cat.weight > maxCat.weight ? cat : maxCat).name}</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-gray-600 font-bold mt-2">💪 Biggest Gains: </p>
+              <p class="text-gray-600 mt-2">🎲 Fats Domino</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-gray-600 font-bold mt-2">📢 Loudest Meows: </p>
+              <p class="text-gray-600 mt-2">🖤 Darth Vader</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-gray-400 mt-2">⏳ Last Updated: </p>
+              <p class="text-gray-400 mt-2"> Thurs Jun 27 @ 3pm</p>
+            </div>
         </div>
     </div>
 `
