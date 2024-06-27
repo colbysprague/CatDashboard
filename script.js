@@ -53,7 +53,7 @@ catData.cats.forEach(cat => {
       </div>
   `;
 
-  container.innerHTML = catCardsHTML;
+  container.innerHTML += catCardsHTML;
 })
 
 
