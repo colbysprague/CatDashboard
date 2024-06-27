@@ -105,7 +105,7 @@ container.innerHTML += `
 
 catData.cats.forEach(cat => {
   let catCardsHTML = `
-  <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+  <div class="bg-white rounded-lg overflow-hidden shadow-lg min-w-[300px]">
       <a href=${cat.bigImg} target="_blank">
           <img src="${cat.imgPath}" alt="${cat.name}" class="w-full h-48 object-cover">
       </a>
