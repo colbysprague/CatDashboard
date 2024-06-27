@@ -3,40 +3,45 @@ catData = {
     {
       "name": "🎲 Fats Domino ",
       "imgPath": "assets/fatsdomino.jpeg",
-      "weight": 288,
+      "weight": 301,
       "unit": "g",
       "desc": "Biggest Kitten. Never sit still.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fatsdomino.jpeg",
-      "superlatives": "🐵💪"
-
-    },
-    {
-      "name": "🖤 Darth Vader",
-      "imgPath": "assets/darthvader.jpeg",
-      "weight": 282,
-      "unit": "g",
-      "desc": "Big complainer. Very loud.",
-      "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
-      "superlatives": "📢"
-    },
-    {
-      "name": "🚀 Fuzz Lightyear",
-      "imgPath": "assets/fuzzlightyear.jpg",
-      "weight": 253,
-      "unit": "g",
-      "desc": "Always got milk on my chin.",
-      "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
-      "superlatives": ""
+      "superlatives": "🐵💪",
+      "gain": 13
     },
     {
       "name": "🦍 Godzilla",
       "imgPath": "assets/godzilla.jpeg",
-      "weight": 282,
+      "weight": 292,
       "unit": "g",
       "desc": "I push my siblings off da nipple.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/godzilla.jpeg",
-      "superlatives": ""
+      "superlatives": "",
+      "gain": 10
     },
+    {
+      "name": "🖤 Darth Vader",
+      "imgPath": "assets/darthvader.jpeg",
+      "weight": 298,
+      "unit": "g",
+      "desc": "Big complainer. Very loud.",
+      "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
+      "superlatives": "📢",
+      "gain": 12
+    },
+    {
+      "name": "🚀 Fuzz Lightyear",
+      "imgPath": "assets/fuzzlightyear.jpg",
+      "weight": 265,
+      "unit": "g",
+      "desc": "Always got milk on my chin.",
+      "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
+      "superlatives": "",
+      "gain": 12
+
+    },
+
     {
       "name": "💥 Bonk (Roommate)",
       "imgPath": "assets/bunk.jpeg",
@@ -44,7 +49,8 @@ catData = {
       "unit": "lb",
       "desc": "I do not like the kittens.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/bunk.jpeg",
-      "superlatives": ""
+      "superlatives": "",
+      "gain": 0
     },
     {
       "name": "🎀 Trixie (Mom)",
@@ -53,7 +59,9 @@ catData = {
       "unit": "lb",
       "desc": "I love my kittens",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/mum.jpeg",
-      "superlatives": ""
+      "superlatives": "",
+      "gain": 0
+
     },
     {
       "name": "🏀 Dunkaroo AKA Dunk (Lives upstairs)",
@@ -62,7 +70,8 @@ catData = {
       "unit": "fat",
       "desc": "...What kittens?",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/dunk.jpeg",
-      "superlatives": ""
+      "superlatives": "",
+      "gain": 0
     }
   ]
 }
@@ -93,6 +102,7 @@ catData.cats.forEach(cat => {
               <h3 class="text-lg font-semibold text-gray-800">${cat.superlatives}</h3>
           </div>
               <p class="text-gray-600 mt-2">Weight: ${cat.weight} ${cat.unit}</p>
+              <p class="text-gray-600 mt-2">Gain/Loss: <span style="color: ${cat.gain > 0 ? 'green' : 'red'}">${cat.gain}</span></p>
               <p class="text-gray-600 mt-2">${cat.desc}</p>
           </div>
       </div>
