@@ -39,9 +39,7 @@ catData = {
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
       "superlatives": "",
       "gain": 12
-
     },
-
     {
       "name": "💥 Bonk (Roommate)",
       "imgPath": "assets/loaf_bunk.jpeg",
