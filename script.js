@@ -15,7 +15,7 @@ catData = {
       "imgPath": "assets/godzilla.jpeg",
       "weight": 292,
       "unit": "g",
-      "desc": "I push my siblings off da nipple.",
+      "desc": "I push my siblings around",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/godzilla.jpeg",
       "superlatives": "",
       "gain": 10
