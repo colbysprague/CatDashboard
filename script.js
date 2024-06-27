@@ -39,4 +39,7 @@ catData = {
   ]
 }
 
+const catContainer = querySelector.getElementById('cat-container')
+console.log(catContainer)
+
 console.log(catData)
