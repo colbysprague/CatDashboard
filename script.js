@@ -25,7 +25,7 @@ catData = {
       "desc": "I am a nipple bully"
     },
     {
-      "name": "💥 Bonk",
+      "name": "💥 Bonk (Roommate)",
       "imgPath": "assets/bunk.jpeg",
       "weight": "7.6lb",
       "desc": "I hate kittens"
@@ -35,6 +35,12 @@ catData = {
       "imgPath": "assets/mum.jpeg",
       "weight": "6.2lb",
       "desc": "I love my kittens"
+    },
+    {
+      "name": "🏀 Dunkaroo AKA Dunk (Lives upstairs)",
+      "imgPath": "assets/dunk.jpeg",
+      "weight": "fat",
+      "desc": "I don't even know there is kittens"
     }
   ]
 }
