@@ -102,7 +102,7 @@ catData.cats.forEach(cat => {
               <h3 class="text-lg font-semibold text-gray-800">${cat.superlatives}</h3>
           </div>
               <p class="text-gray-600 mt-2">Weight: ${cat.weight} ${cat.unit}</p>
-              <p class="text-gray-600 mt-2">Gain/Loss: <span style="color: ${cat.gain > 0 ? 'green' : 'red'}">${cat.gain}</span></p>
+              <p class="text-gray-600 mt-2">Gain/Loss: <span style="color: ${cat.gain >= 0 ? 'green' : 'red'}">${cat.gain}</span></p>
               <p class="text-gray-600 mt-2">${cat.desc}</p>
           </div>
       </div>
