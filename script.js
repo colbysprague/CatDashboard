@@ -39,7 +39,22 @@ catData = {
   ]
 }
 
-const catContainer = querySelector.getElementById('cat-container')
-console.log(catContainer)
+const container = document.querySelector('#cat-container')
+
+catData.cats.forEach(cat => {
+  let catCardsHTML = `
+  <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+          <img src="${cat.imgPath}" alt="${cat.name}" class="w-full h-48 object-cover">
+          <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">${cat.name}</h3>
+              <p class="text-gray-600 mt-2">Weight: ${cat.weight}</p>
+              <p class="text-gray-600 mt-2">${cat.desc}</p>
+          </div>
+      </div>
+  `;
+
+  container.innerHTML = catCardsHTML;
+})
+
 
 console.log(catData)
