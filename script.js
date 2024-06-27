@@ -13,7 +13,8 @@ catData = {
     {
       "name": "🖤 Darth Vader",
       "imgPath": "assets/darthvader.jpeg",
-      "weight": "282g",
+      "weight": 282,
+      "unit": "g",
       "desc": "Big complainer. Very loud.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
       "superlatives": "📢"
