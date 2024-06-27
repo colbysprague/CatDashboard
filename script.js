@@ -44,11 +44,11 @@ catData = {
 
     {
       "name": "💥 Bonk (Roommate)",
-      "imgPath": "assets/bunk.jpeg",
+      "imgPath": "assets/loaf_bunk.jpeg",
       "weight": 7.6,
       "unit": "lb",
       "desc": "I do not like the kittens.",
-      "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/bunk.jpeg",
+      "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/loaf_bunk.jpeg",
       "superlatives": "",
       "gain": 0
     },
