@@ -7,6 +7,7 @@
     <title>Sprague Cats</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <script defer src="script.js"></script>
+    <script defer src="age.js"></script>
     <link rel="icon" type="image/png" href="assets/caticon.png">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1MV9BXLPDE"></script>
     <script>
@@ -24,7 +25,13 @@
 
     <!-- Header -->
     <div class="fixed top-0 left-0 w-full bg-white shadow-md p-4 flex justify-between items-center">
-        <h1 class="text-gray-700 text-lg font-bold">Sprague Cat Tracker</h1>
+        <div class="flex justify-between">
+            <h1 class="text-gray-700 text-lg font-bold">Sprague Cat Tracker</h1>
+            <p>We are </p>
+                <span id="kittenAge"></span>
+            <p>Days old</p>
+        </div>
+
     </div>
 
     <!-- Content Container -->
@@ -39,8 +46,6 @@
         <p class="text-gray-700">Stream coming soon</p>
         <a href="https://www.youtube.com/shorts/DYCnDpUBWPc" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Go to Stream</a>
     </div>
-
-
 
 </body>
 
