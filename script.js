@@ -72,9 +72,9 @@ catData.cats.forEach(cat => {
           <div class="p-4">
 
           ${cat.isChunkiest ?
-      <div class="relative grid select-none items-center whitespace-nowrap rounded-lg bg-yellow-500 py-1.5 px-3 font-sans text-xs font-bold uppercase text-white">
+      `<div class="relative grid select-none items-center whitespace-nowrap rounded-lg bg-yellow-500 py-1.5 px-3 font-sans text-xs font-bold uppercase text-white">
         <span class="">🏆 Chunkiest Monkey</span>
-      </div>
+      </div>`
       : ""
     }
               <h3 class="text-lg font-semibold text-gray-800">${cat.name}</h3>
