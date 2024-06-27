@@ -79,7 +79,7 @@ catData = {
 const container = document.querySelector('#cat-container')
 
 container.innerHTML += `
-<div class="bg-white rounded-lg overflow-hidden shadow-lg">
+<div class="bg-white rounded-lg overflow-hidden shadow-lg min-w-[500px]">
         <div class="p-4">
             <h3 class="text-xl font-semibold text-gray-800">🏆 Daily Superlatives</h3>
 
@@ -105,7 +105,7 @@ container.innerHTML += `
 
 catData.cats.forEach(cat => {
   let catCardsHTML = `
-  <div class="bg-white rounded-lg overflow-hidden shadow-lg min-w-[300px]">
+  <div class="bg-white rounded-lg overflow-hidden shadow-lg min-w-[500px]">
       <a href=${cat.bigImg} target="_blank">
           <img src="${cat.imgPath}" alt="${cat.name}" class="w-full h-48 object-cover">
       </a>
