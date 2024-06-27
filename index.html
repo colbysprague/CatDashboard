@@ -7,7 +7,6 @@
     <title>Sprague Cats</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <script defer src="script.js"></script>
-    <script defer src="age.js"></script>
     <link rel="icon" type="image/png" href="assets/caticon.png">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1MV9BXLPDE"></script>
     <script>
@@ -25,11 +24,10 @@
 
     <!-- Header -->
     <div class="fixed top-0 left-0 w-full bg-white shadow-md p-4 flex justify-between items-center">
-        <div class="flex justify-between">
+        <div class="flex justify-between w-full">
             <h1 class="text-gray-700 text-lg font-bold">Sprague Cat Tracker</h1>
-            <p>We are </p>
-                <span id="kittenAge"></span>
-            <p>Days old</p>
+            <span>We are<span class="kittenAge">0</span>Days Old</span>
+
         </div>
 
     </div>
@@ -48,5 +46,26 @@
     </div>
 
 </body>
+
+<script>
+    const kittenBirthday = new Date(2024, 5, 8); // June 8 2024
+
+    function updateAge() {
+
+      console.log("Calling kitten age")
+
+      const now = new Date();
+      const ageInSeconds = (now - kittenBirthday) / 1000
+
+      const ageInDays = Math.floor((ageInSeconds % (60 * 60 * 24 * 30.44)) / (60 * 60 * 24));
+
+      return ageInDays
+
+      document.getElementbyId("kittenAge").textContent = `${ageInDays}`;
+    }
+
+    updateKittenAge();
+    setInterval(updateAge, 1000)
+</script>
 
 </html>
