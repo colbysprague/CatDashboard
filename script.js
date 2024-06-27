@@ -7,6 +7,7 @@ catData = {
       "unit": "g",
       "desc": "Biggest Kitten. Never sit still.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fatsdomino.jpeg",
+      "superlatives": "🐵💪"
 
     },
     {
@@ -15,7 +16,7 @@ catData = {
       "weight": "282g",
       "desc": "Big complainer. Very loud.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
-
+      "superlatives": "📢"
     },
     {
       "name": "🚀 Fuzz Lightyear",
@@ -24,7 +25,7 @@ catData = {
       "unit": "g",
       "desc": "Always got milk on my chin.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
-
+      "superlatives": ""
     },
     {
       "name": "🦍 Godzilla",
@@ -33,7 +34,7 @@ catData = {
       "unit": "g",
       "desc": "I push my siblings off da nipple.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/godzilla.jpeg",
-
+      "superlatives": ""
     },
     {
       "name": "💥 Bonk (Roommate)",
@@ -42,7 +43,7 @@ catData = {
       "unit": "lb",
       "desc": "I do not like the kittens.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/bunk.jpeg",
-
+      "superlatives": ""
     },
     {
       "name": "🎀 Trixie (Mom)",
@@ -51,7 +52,7 @@ catData = {
       "unit": "lb",
       "desc": "I love my kittens",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/mum.jpeg",
-
+      "superlatives": ""
     },
     {
       "name": "🏀 Dunkaroo AKA Dunk (Lives upstairs)",
@@ -60,7 +61,7 @@ catData = {
       "unit": "fat",
       "desc": "...What kittens?",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/dunk.jpeg",
-
+      "superlatives": ""
     }
   ]
 }
@@ -85,7 +86,10 @@ catData.cats.forEach(cat => {
           <img src="${cat.imgPath}" alt="${cat.name}" class="w-full h-48 object-cover">
       </a>
           <div class="p-4">
+          <div class="flex justify-between" >
               <h3 class="text-lg font-semibold text-gray-800">${cat.name}</h3>
+              <h3 class="text-lg font-semibold text-gray-800">${cat.superlatives}</h3>
+          </div>
               <p class="text-gray-600 mt-2">Weight: ${cat.weight} ${cat.unit}</p>
               <p class="text-gray-600 mt-2">${cat.desc}</p>
           </div>
