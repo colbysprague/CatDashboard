@@ -73,6 +73,7 @@ container.innerHTML += `
 <div class="bg-white rounded-lg overflow-hidden shadow-lg">
         <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-800">🏆 Daily Superlatives</h3>
+            <hr/>
             <p class="text-gray-600 mt-2">🐵 Chunkiest Monkey: ${catData.cats.reduce((maxCat, cat) => cat.weight > maxCat.weight ? cat : maxCat).name}</p>
             <p class="text-gray-600 mt-2">💪 Biggest Gains: 🎲 Fats Domino</p>
             <p class="text-gray-600 mt-2">📢 Loudest Meows: 🖤 Darth Vader</p>
