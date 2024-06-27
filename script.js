@@ -86,6 +86,7 @@ container.innerHTML += `
             <p class="text-gray-600 mt-2">🐵 Chunkiest Monkey: ${catData.cats.reduce((maxCat, cat) => cat.weight > maxCat.weight ? cat : maxCat).name}</p>
             <p class="text-gray-600 mt-2">💪 Biggest Gains: 🎲 Fats Domino</p>
             <p class="text-gray-600 mt-2">📢 Loudest Meows: 🖤 Darth Vader</p>
+            <p class="text-gray-900 mt-2">Last Updated: Thurs Jun 27 @ 3pm</p>
         </div>
     </div>
 `
@@ -101,7 +102,7 @@ catData.cats.forEach(cat => {
               <h3 class="text-lg font-semibold text-gray-800">${cat.name}</h3>
               <h3 class="text-lg font-semibold text-gray-800">${cat.superlatives}</h3>
           </div>
-              <p class="text-gray-600 mt-2">Weight: ${cat.weight} ${cat.unit}</p>
+              <p class="text-gray-600 mt-2">Weight: ${cat.weight}${cat.unit}</p>
               <p class="text-gray-600 mt-2">Gain/Loss: <span style="color: ${cat.gain >= 0 ? 'green' : 'red'}">${cat.gain}</span></p>
               <p class="text-gray-600 mt-2">${cat.desc}</p>
           </div>
@@ -110,6 +111,3 @@ catData.cats.forEach(cat => {
 
   container.innerHTML += catCardsHTML;
 })
-
-
-console.log(catData)
