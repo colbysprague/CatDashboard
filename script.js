@@ -4,31 +4,31 @@ catData = {
       "name": "🎲 Fats Domino ",
       "imgPath": "assets/fatsdomino.jpeg",
       "weight": "288g",
-      "desc": "I love to move around. I am a good walker"
+      "desc": "Biggest Kitten. Never sit still."
     },
     {
       "name": "🖤 Darth Vader",
       "imgPath": "assets/darthvader.jpeg",
       "weight": "282g",
-      "desc": "I am very vocal. I am also a good sitter"
+      "desc": "Big complainer. Very loud."
     },
     {
       "name": "🚀 Fuzz Lightyear",
       "imgPath": "assets/fuzzlightyear.jpg",
       "weight": "253g",
-      "desc": "I always have milk on my chin"
+      "desc": "Always got milk on my chin."
     },
     {
       "name": "🦍 Godzilla",
       "imgPath": "assets/godzilla.jpeg",
       "weight": "282g",
-      "desc": "I am a nipple bully"
+      "desc": "I push my siblings off da nipple."
     },
     {
       "name": "💥 Bonk (Roommate)",
       "imgPath": "assets/bunk.jpeg",
       "weight": "7.6lb",
-      "desc": "I hate kittens"
+      "desc": "I do not like the kittens."
     },
     {
       "name": "🎀 Trixie (Mom)",
@@ -40,7 +40,7 @@ catData = {
       "name": "🏀 Dunkaroo AKA Dunk (Lives upstairs)",
       "imgPath": "assets/dunk.jpeg",
       "weight": "fat",
-      "desc": "I don't even know there is kittens"
+      "desc": "...What kittens?"
     }
   ]
 }
