@@ -98,11 +98,6 @@ container.innerHTML += `
               <p class="text-gray-400 mt-2"> Fri Jun 28 @ 11:30am </p>
             </div>
         </div>
-        <div>
-          <button class="w-full mx-auto bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" onclick="location.href='/CatDashboard/gallery'" >
-            View Gallery
-          </button>
-        </div>
     </div>
 `
 
