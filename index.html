@@ -115,7 +115,7 @@ function shareLink() {
     const shareData = {
         title: 'Sprague Cats',
         text: 'Check out these kittens!',
-        url: 'https://www.colbysprague.github.io/CatDashboard'
+        url: 'https://colbysprague.github.io/CatDashboard'
     };
 
     if (navigator.share) {
@@ -131,7 +131,7 @@ function shareLink() {
         document.execCommand('copy');
         document.body.removeChild(tempInput);
 
-        alert('Link copied to clipboard: ' + shareData.url);
+        alert('Link copied to clipboard!');
     }
 }
 </script>
