@@ -95,7 +95,7 @@ container.innerHTML += `
             </div>
             <div class="flex justify-between">
               <p class="text-gray-400 mt-2">⏳ Last Updated: </p>
-              <p class="text-gray-400 mt-2"> Thurs Jun 27 @ 3pm</p>
+              <p class="text-gray-400 mt-2"> Fri Jun 28 @ 11:30am </p>
             </div>
         </div>
     </div>
