@@ -3,42 +3,42 @@ catData = {
     {
       "name": "🎲 Fats Domino ",
       "imgPath": "assets/fatsdomino.jpeg",
-      "weight": 301,
+      "weight": 314,
       "unit": "g",
       "desc": "Biggest Kitten. Never sit still.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fatsdomino.jpeg",
-      "superlatives": "🐵💪",
+      "superlatives": "",
       "gain": 13
     },
     {
       "name": "🦍 Godzilla",
       "imgPath": "assets/godzilla.jpeg",
-      "weight": 292,
+      "weight": 307,
       "unit": "g",
       "desc": "I push my siblings around",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/godzilla.jpeg",
       "superlatives": "",
-      "gain": 10
+      "gain": 15
     },
     {
       "name": "🖤 Darth Vader",
       "imgPath": "assets/darthvader.jpeg",
-      "weight": 298,
+      "weight": 318,
       "unit": "g",
       "desc": "Big complainer. Very loud.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
-      "superlatives": "📢",
-      "gain": 12
+      "superlatives": "📢💪🐵",
+      "gain": 20
     },
     {
       "name": "🚀 Fuzz Lightyear",
       "imgPath": "assets/fuzzlightyear.jpg",
-      "weight": 265,
+      "weight": 278,
       "unit": "g",
       "desc": "Always got milk on my chin.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
       "superlatives": "",
-      "gain": 12
+      "gain": 13
     },
     {
       "name": "💥 Bonk (Roommate)",
@@ -87,7 +87,7 @@ container.innerHTML += `
             </div>
             <div class="flex justify-between">
               <p class="text-gray-600 font-bold mt-2">💪 Biggest Gains: </p>
-              <p class="text-gray-600 mt-2">🎲 Fats Domino</p>
+              <p class="text-gray-600 mt-2">🖤 Darth Vader</p>
             </div>
             <div class="flex justify-between">
               <p class="text-gray-600 font-bold mt-2">📢 Loudest Meows: </p>
