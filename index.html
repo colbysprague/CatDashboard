@@ -28,8 +28,33 @@
     <!-- Header -->
     <div class="fixed top-0 left-0 w-full bg-white shadow-md p-4 flex justify-between items-center">
         <div class="flex justify-between w-full">
-            <h1 class="text-gray-700 text-lg font-bold">Sprague Cat Tracker</h1>
-            <span>We are <span id="kittenAge">19</span> Days Old</span>
+
+            <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:15;"></span>
+                </span>
+                days
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:10;"></span>
+                </span>
+                hours
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:24;"></span>
+                </span>
+                min
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:${counter};"></span>
+                </span>
+                sec
+              </div>
+            </div>
 
         </div>
 
@@ -38,8 +63,9 @@
     <!-- Content Container -->
     <div class="container mx-auto p-4 mb-16 mt-10">
         <div class="mt-10">
+
             <!-- Banner Card -->
-            <div class="bg-yellow-100 p-4 rounded shadow-md mb-4">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg shadow-md mb-4">
                 <h2 class="text-xl font-bold text-gray-700">Welcome to the Sprague Cat Tracker</h2>
                 <p class="text-gray-600">Track the growth and activities of our adorable kittens!</p>
             </div>
