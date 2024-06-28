@@ -23,7 +23,7 @@
 
 
 
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="galleryContainer">
         <div>
             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
         </div>
@@ -64,16 +64,21 @@
 
 
     <script>
+
+        const galleryContainer = document.querySelector("#galleryContainer");
+
         fetch('https://api.github.com/repos/colbysprague/CatDashboard/contents/gallery')
             .then(response => response.json())
             .then(data => {
                 data.forEach(file => {
                     if (file.type === 'file' && file.name.match(/\.(jpeg|jpg|gif|png)$/)) {
                         const imgUrl = file.download_url;
-                        const imgElement = document.createElement('img');
-                        imgElement.src = imgUrl;
-                        imgElement.className = 'col-md-4 gallery-img'; // Bootstrap grid column size
-                        document.querySelector('.row').appendChild(imgElement);
+                        let image = `
+                          <div>
+                              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
+                          </div>
+                          `
+                        galleryContainer.innerHTML += image;
                     }
                 });
             });
