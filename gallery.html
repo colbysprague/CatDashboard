@@ -1,1 +1,81 @@
-<h1>Gallery</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprague Cats</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/caticon.png">
+</head>
+
+
+<body class="bg-gray-100">
+    <!-- Header -->
+    <div class="fixed top-0 left-0 w-full bg-white shadow-md p-4 flex justify-between items-center">
+        <div class="flex justify-between w-full align-center">
+            <h1 class="text-gray-700 text-lg font-bold">Sprague Cat Tracker</h1>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" onclick="shareLink()">
+                Go Back
+            </button >
+        </div>
+    </div>
+
+
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
+        </div>
+    </div>
+
+
+    <script>
+        fetch('https://api.github.com/repos/colbysprague/CatDashboard/contents/gallery')
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(file => {
+                    if (file.type === 'file' && file.name.match(/\.(jpeg|jpg|gif|png)$/)) {
+                        const imgUrl = file.download_url;
+                        const imgElement = document.createElement('img');
+                        imgElement.src = imgUrl;
+                        imgElement.className = 'col-md-4 gallery-img'; // Bootstrap grid column size
+                        document.querySelector('.row').appendChild(imgElement);
+                    }
+                });
+            });
+    </script>
+</body>
