@@ -109,11 +109,10 @@ setInterval(updateAge, 1000);
 </script>
 
 <script>
-// for native share functionality
 function shareLink() {
     const shareData = {
         title: 'Sprague Cats',
-        text: 'Check out these kittens',
+        text: 'Check out these kittens!',
         url: 'https://www.colbysprague.github.io/CatDashboard'
     };
 
@@ -123,7 +122,14 @@ function shareLink() {
             .catch((error) => console.error('Error sharing:', error));
     } else {
         // Fallback for browsers that do not support native sharing
-        alert('Native sharing not supported on this browser. Please use the device’s share functionality.');
+        const tempInput = document.createElement('input');
+        tempInput.value = shareData.url;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+
+        alert('Link copied to clipboard: ' + shareData.url);
     }
 }
 </script>
