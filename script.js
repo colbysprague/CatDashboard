@@ -35,7 +35,7 @@ catData = {
       "imgPath": "assets/fuzzlightyear.jpg",
       "weight": 278,
       "unit": "g",
-      "desc": "Always got milk on my chin.",
+      "desc": "I always have milk on my chin.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
       "superlatives": "",
       "gain": 13
@@ -55,14 +55,14 @@ catData = {
       "imgPath": "assets/mum.jpeg",
       "weight": 6.2,
       "unit": "lb",
-      "desc": "I love my kittens",
+      "desc": "Very chatty. Love my kittens.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/mum.jpeg",
       "superlatives": "",
       "gain": 0
 
     },
     {
-      "name": "🏀 Dunkaroo AKA Dunk (Lives upstairs)",
+      "name": "🏀 Dunk (Lives upstairs)",
       "imgPath": "assets/dunk.jpeg",
       "weight": 1,
       "unit": "fat",
