@@ -79,7 +79,7 @@ const container = document.querySelector('#cat-container')
 container.innerHTML += `
 <div class="bg-white rounded-lg overflow-hidden shadow-lg">
         <div class="p-4">
-            <h3 class="text-xl font-semibold text-gray-800">🏆 Daily Superlatives</h3>
+            <h3 class="text-xl font-semibold text-gray-800" mx-auto>🏆 Daily Superlatives</h3>
 
             <div class="flex justify-between">
               <p class="text-gray-600 font-bold mt-2">🐵 Chunkiest Monkey: </p>
