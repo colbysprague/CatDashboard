@@ -40,8 +40,8 @@
         <div class="mt-10">
 
             <!-- Banner Card -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-lg shadow-md mb-4">
-
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg shadow-md mb-4 p-4">
+                <h2 class="text-lg" >We are this old</h2 >
                 <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
                   <div class="flex flex-col">
                     <span class="countdown font-mono text-5xl">
@@ -86,22 +86,27 @@
 </body>
 
 <script>
-    const kittenBirthday = new Date(2024, 5, 8); // June 8 2024
+const kittenBirthday = new Date(2024, 5, 8); // June 8, 2024
 
-    function updateAge() {
+function updateAge() {
+  console.log("Calling kitten age");
 
-      console.log("Calling kitten age")
+  const now = new Date();
+  const ageInSeconds = Math.floor((now - kittenBirthday) / 1000);
 
-      const now = new Date();
-      const ageInSeconds = (now - kittenBirthday) / 1000
+  const seconds = ageInSeconds % 60;
+  const minutes = Math.floor((ageInSeconds / 60) % 60);
+  const hours = Math.floor((ageInSeconds / (60 * 60)) % 24);
+  const days = Math.floor((ageInSeconds / (60 * 60 * 24)) % 30.44);
 
-      const ageInDays = Math.floor((ageInSeconds % (60 * 60 * 24 * 30.44)) / (60 * 60 * 24));
+  document.getElementById("secs").textContent = `${seconds}`
+  document.getElementById("mins").textContent = `${minutes}`
+  document.getElementById("hours").textContent = `${hours}`
+  document.getElementById("days").textContent = `${days}`
+}
 
-      document.getElementById("kittenAge").textContent = `${ageInDays}`;
-    }
-
-    updateAge();
-    setInterval(updateAge, 1000)
+updateAge();
+setInterval(updateAge, 1000);
 </script>
 
 </html>
