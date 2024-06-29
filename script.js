@@ -87,7 +87,7 @@ container.innerHTML += `
             </div>
             <div class="flex justify-between">
               <p class="text-gray-600 font-bold mt-2">💪 Biggest Gains: </p>
-              <p class="text-gray-600 mt-2">🚀 Fuzz Lightyear</p>
+              <p class="text-gray-600 mt-2">${catData.cats.reduce((maxCat, cat) => cat.gain > maxCat.gain ? cat : maxCat).name}</p>
             </div>
             <div class="flex justify-between">
               <p class="text-gray-600 font-bold mt-2">📢 Loudest Meows: </p>
