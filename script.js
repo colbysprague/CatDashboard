@@ -3,42 +3,42 @@ catData = {
     {
       "name": "🎲 Fats Domino ",
       "imgPath": "assets/fatsdomino.jpeg",
-      "weight": 314,
+      "weight": 331,
       "unit": "g",
       "desc": "Biggest Kitten. Never sit still.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fatsdomino.jpeg",
-      "superlatives": "",
-      "gain": 13
+      "superlatives": "🐵",
+      "gain": 17
     },
     {
       "name": "🦍 Godzilla",
       "imgPath": "assets/godzilla.jpeg",
-      "weight": 307,
+      "weight": 319,
       "unit": "g",
       "desc": "I push my siblings around",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/godzilla.jpeg",
       "superlatives": "",
-      "gain": 15
+      "gain": 12
     },
     {
       "name": "🖤 Darth Vader",
       "imgPath": "assets/darthvader.jpeg",
-      "weight": 318,
+      "weight": 325,
       "unit": "g",
       "desc": "Big complainer. Very loud.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
-      "superlatives": "📢💪🐵",
-      "gain": 20
+      "superlatives": "📢",
+      "gain": 7
     },
     {
       "name": "🚀 Fuzz Lightyear",
       "imgPath": "assets/fuzzlightyear.jpg",
-      "weight": 278,
+      "weight": 302,
       "unit": "g",
       "desc": "I always have milk on my chin.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
-      "superlatives": "",
-      "gain": 13
+      "superlatives": "💪",
+      "gain": 24
     },
     {
       "name": "💥 Bonk (Roommate)",
