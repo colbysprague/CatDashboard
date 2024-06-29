@@ -87,7 +87,7 @@ container.innerHTML += `
             </div>
             <div class="flex justify-between">
               <p class="text-gray-600 font-bold mt-2">💪 Biggest Gains: </p>
-              <p class="text-gray-600 mt-2">🖤 Darth Vader</p>
+              <p class="text-gray-600 mt-2">🚀 Fuzz Lightyear</p>
             </div>
             <div class="flex justify-between">
               <p class="text-gray-600 font-bold mt-2">📢 Loudest Meows: </p>
