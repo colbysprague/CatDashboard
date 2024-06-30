@@ -59,7 +59,6 @@ catData = {
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/mum.jpeg",
       "superlatives": "",
       "gain": 0
-
     },
     {
       "name": "🏀 Dunk (Lives upstairs)",

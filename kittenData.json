@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Fats Domino ",
+    "emoji": "🎲",
+    "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f3b2.png",
+    "color": "rgb(255, 255, 255)",
+    "imgPath": "assets/fatsdomino.jpeg",
+    "weight": [
+      232,
+      238,
+      240,
+      216,
+      233,
+      254,
+      264,
+      272,
+      288,
+      301,
+      314,
+      331
+    ],
+    "unit": "g",
+    "desc": "Biggest Kitten. Never sit still.",
+    "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fatsdomino.jpeg",
+    "superlatives": "🐵",
+    "gain": 17,
+    "isKitten": true
+  },
+  {
+    "name": "Godzilla",
+    "emoji": "🦍",
+    "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f98d.png",
+    "color": "rgb(255, 255, 255)",
+    "imgPath": "assets/godzilla.jpeg",
+    "weight": [
+      254,
+      263,
+      276,
+      267,
+      274,
+      265,
+      271,
+      282,
+      292,
+      307,
+      319
+    ],
+    "unit": "g",
+    "desc": "I push my siblings around",
+    "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/godzilla.jpeg",
+    "superlatives": "",
+    "gain": 12,
+    "isKitten": true
+  },
+  {
+    "name": "Darth Vader",
+    "emoji": "🖤",
+    "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f5a4.png",
+    "color": "rgb(255, 255, 255)",
+    "imgPath": "assets/darthvader.jpeg",
+    "weight": [
+      245,
+      261,
+      253,
+      256,
+      262,
+      265,
+      282,
+      286,
+      298,
+      318,
+      325
+    ],
+    "unit": "g",
+    "desc": "Big complainer. Very loud.",
+    "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
+    "superlatives": "📢",
+    "gain": 7,
+    "isKitten": true
+  },
+  {
+    "name": "Fuzz Lightyear",
+    "emoji": "🚀",
+    "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f680.png",
+    "color": "rgb(255, 255, 255)",
+    "imgPath": "assets/fuzzlightyear.jpg",
+    "weight": [
+      236,
+      247,
+      240,
+      226,
+      236,
+      244,
+      245,
+      247,
+      253,
+      265,
+      278,
+      302
+    ],
+    "unit": "g",
+    "desc": "I always have milk on my chin.",
+    "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
+    "superlatives": "💪",
+    "gain": 24,
+    "isKitten": true
+  },
+  {
+    "name": "Bonk (Roommate)",
+    "emoji": "💥",
+    "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f4a5.png",
+    "color": "rgb(255, 255, 255)",
+    "imgPath": "assets/loaf_bunk.jpeg",
+    "weight": [
+      7.6
+    ],
+    "unit": "lb",
+    "desc": "I do not like the kittens.",
+    "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/loaf_bunk.jpeg",
+    "superlatives": "",
+    "gain": 0,
+    "isKitten": false
+  },
+  {
+    "name": "Trixie (Mom)",
+    "emoji": "🎀",
+    "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f380.png",
+    "color": "rgb(255, 255, 255)",
+    "imgPath": "assets/mum.jpeg",
+    "weight": [
+      6.2
+    ],
+    "unit": "lb",
+    "desc": "Very chatty. Love my kittens.",
+    "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/mum.jpeg",
+    "superlatives": "",
+    "gain": 0,
+    "isKitten": false
+  },
+  {
+    "name": "Dunk",
+    "emoji": "🏀",
+    "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f3c0.png",
+    "color": "rgb(255, 255, 255)",
+    "imgPath": "assets/dunk.jpeg",
+    "weight": [
+      1
+    ],
+    "unit": "fat",
+    "desc": "...What kittens?",
+    "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/dunk.jpeg",
+    "superlatives": "",
+    "gain": 0,
+    "isKitten": false
+  }
+]
