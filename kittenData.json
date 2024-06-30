@@ -3,7 +3,7 @@
     "name": "Fats Domino ",
     "emoji": "🎲",
     "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f3b2.png",
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(0,0,0)",
     "imgPath": "assets/fatsdomino.jpeg",
     "weight": [
       232,
@@ -30,7 +30,7 @@
     "name": "Godzilla",
     "emoji": "🦍",
     "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f98d.png",
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(0,0,0)",
     "imgPath": "assets/godzilla.jpeg",
     "weight": [
       254,
@@ -56,7 +56,7 @@
     "name": "Darth Vader",
     "emoji": "🖤",
     "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f5a4.png",
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(0,0,0)",
     "imgPath": "assets/darthvader.jpeg",
     "weight": [
       245,
@@ -82,7 +82,7 @@
     "name": "Fuzz Lightyear",
     "emoji": "🚀",
     "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f680.png",
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(0,0,0)",
     "imgPath": "assets/fuzzlightyear.jpg",
     "weight": [
       236,
@@ -109,7 +109,7 @@
     "name": "Bonk (Roommate)",
     "emoji": "💥",
     "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f4a5.png",
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(0,0,0)",
     "imgPath": "assets/loaf_bunk.jpeg",
     "weight": [
       7.6
@@ -125,7 +125,7 @@
     "name": "Trixie (Mom)",
     "emoji": "🎀",
     "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f380.png",
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(0,0,0)",
     "imgPath": "assets/mum.jpeg",
     "weight": [
       6.2
@@ -141,7 +141,7 @@
     "name": "Dunk",
     "emoji": "🏀",
     "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f3c0.png",
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(0,0,0)",
     "imgPath": "assets/dunk.jpeg",
     "weight": [
       1
