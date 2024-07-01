@@ -195,11 +195,6 @@ function shareLink() {
 
     function createChart(catData, numDays) {
 
-      // console.log(catData.filter(cat => cat.isKitten).map(cat => ({
-      //   label: cat.name,
-      //   weight: cat.weight
-      // })));
-
         let chartLabels = getLastNDays(numDays);
         const ctx = document.getElementById('myChart').getContext('2d');
 

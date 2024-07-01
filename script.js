@@ -78,7 +78,7 @@ function createKittenCards(catData) {
               </div>
               <div class="flex justify-between">
                 <p class="text-gray-400 mt-2">⏳ Last Updated: </p>
-                <p class="text-gray-400 mt-2"> Sun Jun 30 @ 9:55pm </p>
+                <p class="text-gray-400 mt-2"> Mon Jul 1 @ 1:28pm </p>
               </div>
           </div>
       </div>
