@@ -162,6 +162,11 @@ function shareLink() {
             const day = date.getDate();
             dates.push(`${month}/${day}`);
         }
+        const tomorrow = new Date();
+        tomorrow.setDate(today.getDate() + 1);
+        const tomorrowMonth = tomorrow.getMonth() + 1;
+        const tomorrowDay = tomorrow.getDate();
+        dates.push(`${tomorrowMonth}/${tomorrowDay}`);
 
         return dates;
     }
@@ -194,13 +199,13 @@ function shareLink() {
       //   weight: cat.weight
       // })));
 
-        const chartLabels = getLastNDays(numDays);
+        let chartLabels = getLastNDays(numDays);
         const ctx = document.getElementById('myChart').getContext('2d');
 
         new Chart(ctx, {
             type: "line",
             data: {
-                labels: chartLabels.push(" "),
+                labels: chartLabels,
                 datasets: catData.filter(cat => cat.isKitten)
                   .map((cat) => ({
                     label: cat.name,
