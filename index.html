@@ -102,7 +102,6 @@
 const kittenBirthday = new Date(2024, 5, 8); // June 8, 2024
 
 function updateAge() {
-  console.log("Calling kitten age");
 
   const now = new Date();
   const ageInSeconds = Math.floor((now - kittenBirthday) / 1000);
@@ -162,6 +161,7 @@ function shareLink() {
             const day = date.getDate();
             dates.push(`${month}/${day}`);
         }
+
         const tomorrow = new Date();
         tomorrow.setDate(today.getDate() + 1);
         const tomorrowMonth = tomorrow.getMonth() + 1;
@@ -230,7 +230,7 @@ function shareLink() {
                 scales: {
                     y: {
                         beginAtZero: false,
-                        max: 385,
+                        max: 360,
                     },
                 },
             },
