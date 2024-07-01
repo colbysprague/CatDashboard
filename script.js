@@ -3,42 +3,42 @@ catData = {
     {
       "name": "🎲 Fats Domino ",
       "imgPath": "assets/fatsdomino.jpeg",
-      "weight": 331,
+      "weight": 348,
       "unit": "g",
       "desc": "Biggest Kitten. Never sit still.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fatsdomino.jpeg",
       "superlatives": "🐵",
-      "gain": 17
+      "gain": 17,
     },
     {
       "name": "🦍 Godzilla",
       "imgPath": "assets/godzilla.jpeg",
-      "weight": 319,
+      "weight": 338,
       "unit": "g",
       "desc": "I push my siblings around",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/godzilla.jpeg",
       "superlatives": "",
-      "gain": 12
+      "gain": 19
     },
     {
       "name": "🖤 Darth Vader",
       "imgPath": "assets/darthvader.jpeg",
-      "weight": 325,
+      "weight": 344,
       "unit": "g",
       "desc": "Big complainer. Very loud.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
       "superlatives": "📢",
-      "gain": 7
+      "gain": 19
     },
     {
       "name": "🚀 Fuzz Lightyear",
       "imgPath": "assets/fuzzlightyear.jpg",
-      "weight": 302,
+      "weight": 325,
       "unit": "g",
       "desc": "I always have milk on my chin.",
       "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
       "superlatives": "💪",
-      "gain": 24
+      "gain": 23
     },
     {
       "name": "💥 Bonk (Roommate)",
@@ -94,7 +94,7 @@ container.innerHTML += `
             </div>
             <div class="flex justify-between">
               <p class="text-gray-400 mt-2">⏳ Last Updated: </p>
-              <p class="text-gray-400 mt-2"> Sat Jun 29 @ 12:30pm </p>
+              <p class="text-gray-400 mt-2"> Sun Jun 30 @ 9:55pm </p>
             </div>
         </div>
     </div>
