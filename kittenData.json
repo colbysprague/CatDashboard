@@ -54,12 +54,13 @@
   },
   {
     "name": "Darth Vader",
-    "emoji": "🖤",
+    "emoji": "😈",
     "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f5a4.png",
-    "color": "rgb(0,0,0)",
+    "color": "rgb(128, 0, 128)",
     "imgPath": "assets/darthvader.jpeg",
     "weight": [
       245,
+      261,
       261,
       253,
       256,
