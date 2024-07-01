@@ -188,14 +188,21 @@ function shareLink() {
     }
 
     function createChart(catData, numDays) {
+
+      // console.log(catData.filter(cat => cat.isKitten).map(cat => ({
+      //   label: cat.name,
+      //   weight: cat.weight
+      // })));
+
         const chartLabels = getLastNDays(numDays);
         const ctx = document.getElementById('myChart').getContext('2d');
 
         new Chart(ctx, {
             type: "line",
             data: {
-                labels: chartLabels,
-                datasets: catData.map((cat) => ({
+                labels: chartLabels.push(" "),
+                datasets: catData.filter(cat => cat.isKitten)
+                  .map((cat) => ({
                     label: cat.name,
                     backgroundColor: cat.color,
                     borderColor: cat.color,
