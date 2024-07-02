@@ -1,3 +1,4 @@
+import subprocess
 import datetime
 import json
 import pprint
@@ -21,6 +22,14 @@ def get_valid_yes_no(prompt):
             return response  # Return valid response
         else:
             print("Error: Please enter 'y' or 'n'.")
+
+def run_bash_script(script_path):
+    try:
+        subprocess.run(['bash', script_path], check=True)
+        print("Bash script executed successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error executing bash script: {e}")
+
 
 # Specify the path to your JSON file
 json_file_path = 'kittenData.json'
@@ -55,6 +64,8 @@ if answer == 'y':
     # stash backup file
     with open(backup_file_path, 'w') as file:
         json.dump(json_data, file, indent=2)
+
+    run_bash_script('commit.sh')
     print("Changes saved!")
 else:
    print("Changes not saved")
