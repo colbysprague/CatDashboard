@@ -26,7 +26,7 @@
     "unit": "g",
     "desc": "Biggest Kitten. Never sit still.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fatsdomino.jpeg",
-    "superlatives": "",
+    "superlatives": "🐵",
     "gain": 12,
     "isKitten": true
   },
@@ -88,7 +88,7 @@
     "unit": "g",
     "desc": "Big complainer. Very loud.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
-    "superlatives": "",
+    "superlatives": "📢",
     "gain": 15,
     "isKitten": true
   },
@@ -119,7 +119,7 @@
     "unit": "g",
     "desc": "I always have milk on my chin.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
-    "superlatives": "",
+    "superlatives": "💪",
     "gain": 18,
     "isKitten": true
   },
