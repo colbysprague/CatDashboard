@@ -20,13 +20,14 @@
       331,
       348,
       362,
-      383
+      383,
+      395
     ],
     "unit": "g",
     "desc": "Biggest Kitten. Never sit still.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fatsdomino.jpeg",
     "superlatives": "\ud83d\udc35",
-    "gain": 21,
+    "gain": 12,
     "isKitten": true
   },
   {
@@ -50,19 +51,20 @@
       319,
       338,
       341,
-      364
+      364,
+      376
     ],
     "unit": "g",
     "desc": "I push my siblings around",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/godzilla.jpeg",
     "superlatives": "",
-    "gain": 23,
+    "gain": 12,
     "isKitten": true
   },
   {
     "name": "Darth Vader",
     "emoji": "\ud83d\ude08",
-    "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f5a4.png",
+    "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f608.png",
     "color": "rgb(177,72,210)",
     "imgPath": "assets/darthvader.jpeg",
     "weight": [
@@ -80,13 +82,14 @@
       325,
       344,
       358,
-      370
+      370,
+      385
     ],
     "unit": "g",
     "desc": "Big complainer. Very loud.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
     "superlatives": "\ud83d\udce2",
-    "gain": 12,
+    "gain": 15,
     "isKitten": true
   },
   {
@@ -110,13 +113,14 @@
       302,
       325,
       331,
-      350
+      350,
+      368
     ],
     "unit": "g",
     "desc": "I always have milk on my chin.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
     "superlatives": "\ud83d\udcaa",
-    "gain": 19,
+    "gain": 18,
     "isKitten": true
   },
   {
