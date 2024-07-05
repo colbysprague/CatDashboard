@@ -22,13 +22,14 @@
       362,
       383,
       395,
-      413
+      413,
+      414
     ],
     "unit": "g",
     "desc": "Biggest Kitten. Never sit still.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fatsdomino.jpeg",
     "superlatives": "\ud83d\udc35",
-    "gain": 18,
+    "gain": 1,
     "isKitten": true
   },
   {
@@ -54,13 +55,14 @@
       341,
       364,
       376,
-      397
+      397,
+      401
     ],
     "unit": "g",
     "desc": "I push my siblings around",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/godzilla.jpeg",
     "superlatives": "",
-    "gain": 21,
+    "gain": 4,
     "isKitten": true
   },
   {
@@ -86,13 +88,14 @@
       358,
       370,
       385,
-      399
+      399,
+      400
     ],
     "unit": "g",
     "desc": "Big complainer. Very loud.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
     "superlatives": "\ud83d\udce2",
-    "gain": 14,
+    "gain": 1,
     "isKitten": true
   },
   {
@@ -118,13 +121,14 @@
       331,
       350,
       368,
-      381
+      381,
+      395
     ],
     "unit": "g",
     "desc": "I always have milk on my chin.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
     "superlatives": "\ud83d\udcaa",
-    "gain": 13,
+    "gain": 14,
     "isKitten": true
   },
   {
