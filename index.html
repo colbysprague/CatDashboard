@@ -129,12 +129,12 @@
                 Kittens are moving into a new enclosure. Stream to return soon
                 🚧 👷🏼
             </p>
-            <a
-                href="https://youtube.com/live/UpI2SFT6nms?feature=share"
-                disabled
+            <button
+                onclick="navigateToUrl('https://youtube.com/live/UpI2SFT6nms?feature=share')"
                 target="_blank"
                 class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded"
-                >Go To Stream</a
+                disabled
+                >Go To Stream</
             >
         </div>
     </body>
@@ -161,6 +161,12 @@
         updateAge();
         setInterval(updateAge, 1000);
     </script>
+
+    <script>
+      function navigateToUrl(url) {
+          window.open(url, '_blank').focus();
+      }
+    </script><
 
     <!-- share functionality -->
     <script>
