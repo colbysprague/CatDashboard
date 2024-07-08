@@ -60,6 +60,9 @@ function createKittenCards(catData) {
               <div class="flex justify-between">
                 <p class="text-gray-600 font-bold mt-2">🐵 Chunkiest Monkey: </p>
                 <p class="text-gray-600 mt-2">
+                  <span class="text-blue-400">
+                    (${getKittenWithHighestWeightLastElement(catData).weight.slice(-1)}${getKittenWithHighestWeightLastElement(catData).unit})
+                  </span>
                   ${getKittenWithHighestWeightLastElement(catData).emoji}
                   ${getKittenWithHighestWeightLastElement(catData).name}
                 </p>
@@ -67,6 +70,9 @@ function createKittenCards(catData) {
               <div class="flex justify-between">
                 <p class="text-gray-600 font-bold mt-2">💪 Biggest Gains: </p>
                 <p class="text-gray-600 mt-2">
+                <span class="text-blue-400">
+                  (+${getKittenWithBiggestWeightGain(catData).gain})
+                </span>
                 ${getKittenWithBiggestWeightGain(catData).emoji}
                 ${getKittenWithBiggestWeightGain(catData).name}
                 </p>
