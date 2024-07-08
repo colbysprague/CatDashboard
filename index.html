@@ -62,6 +62,14 @@
                     >
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
+                                <span id="weeks" style="--value: ${counter}"
+                                    >10</span
+                                >
+                            </span>
+                            weeks
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
                                 <span id="days" style="--value: 15">10</span>
                             </span>
                             days
@@ -77,14 +85,6 @@
                                 <span id="mins" style="--value: 24">10</span>
                             </span>
                             min
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span id="secs" style="--value: ${counter}"
-                                    >10</span
-                                >
-                            </span>
-                            sec
                         </div>
                     </div>
                 </div>
@@ -146,15 +146,15 @@
             const now = new Date();
             const ageInSeconds = Math.floor((now - kittenBirthday) / 1000);
 
-            const seconds = ageInSeconds % 60;
-            const minutes = Math.floor((ageInSeconds / 60) % 60);
+            const weeks = Math.floor(ageInSeconds / (60 * 60 * 24 * 7));
+            const days = Math.floor((ageInSeconds / (60 * 60 * 24)) % 7);
             const hours = Math.floor((ageInSeconds / (60 * 60)) % 24);
-            const days = Math.floor((ageInSeconds / (60 * 60 * 24)) % 30.44);
+            const minutes = Math.floor((ageInSeconds / 60) % 60);
 
-            document.getElementById("secs").textContent = `${seconds}`;
-            document.getElementById("mins").textContent = `${minutes}`;
-            document.getElementById("hours").textContent = `${hours}`;
+            document.getElementById("weeks").textContent = `${weeks}`;
             document.getElementById("days").textContent = `${days}`;
+            document.getElementById("hours").textContent = `${hours}`;
+            document.getElementById("mins").textContent = `${minutes}`;
         }
 
         updateAge();
