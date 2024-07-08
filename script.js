@@ -100,8 +100,15 @@ function createKittenCards(catData) {
               <h3 class="text-lg font-semibold text-gray-800">${cat.emoji} ${cat.name}</h3>
               <h3 class="text-lg font-semibold text-gray-800">${cat.superlatives}</h3>
           </div>
-              <p class="text-gray-600 mt-2">Weight: ${cat.weight.slice(-1)}${cat.unit}</p>
-              <p class="text-gray-600 mt-2">Gain/Loss: <span style="color: ${cat.gain >= 0 ? "green" : "red"}">${cat.gain}</span></p>
+              <p class="text-gray-600 mt-2">
+                Weight: ${cat.weight.slice(-1)}${cat.unit}
+                ${
+                  cat.gain >= 0
+                    ? `<span class="text-green-700 text-sm">(^${cat.gain})</span>`
+                    : `<span class="text-red-700 text-sm">(-${cat.gain})</span>`
+                }
+              </p>
+
               <p class="text-gray-600 mt-2">${cat.desc}</p>
           </div>
       </div>
