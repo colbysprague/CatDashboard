@@ -104,8 +104,8 @@ function createKittenCards(catData) {
                 Weight: ${cat.weight.slice(-1)}${cat.unit}
                 ${
                   cat.gain >= 0
-                    ? `<span class="text-green-700 text-sm">(^${cat.gain})</span>`
-                    : `<span class="text-red-700 text-sm">(-${cat.gain})</span>`
+                    ? `<span class="text-green-700">(^${cat.gain})</span>`
+                    : `<span class="text-red-700">(-${cat.gain})</span>`
                 }
               </p>
 
