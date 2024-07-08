@@ -1,13 +1,13 @@
-
 async function loadJSONForKittenCards() {
-  const url = "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/kittenData.json";
+  const url =
+    "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/kittenData.json";
 
   try {
     const response = await fetch(url);
     const data = await response.json();
-    createKittenCards(data)
+    createKittenCards(data);
   } catch (error) {
-    console.error('Error fetching the file:', error);
+    console.error("Error fetching the file:", error);
   }
 }
 
@@ -15,7 +15,7 @@ function getKittenWithHighestWeightLastElement(kittens) {
   let maxWeight = -Infinity;
   let kittenWithMaxWeight = null;
 
-  kittens.forEach(kitten => {
+  kittens.forEach((kitten) => {
     let weights = kitten.weight;
     let lastWeight = weights[weights.length - 1]; // Get the last element of the weight array
 
@@ -32,7 +32,7 @@ function getKittenWithBiggestWeightGain(kittens) {
   let maxWeightGain = -Infinity;
   let kittenWithBiggestGain = null;
 
-  kittens.forEach(kitten => {
+  kittens.forEach((kitten) => {
     let weights = kitten.weight;
     if (weights.length >= 2) {
       let lastWeight = weights[weights.length - 1];
@@ -50,8 +50,7 @@ function getKittenWithBiggestWeightGain(kittens) {
 }
 
 function createKittenCards(catData) {
-
-  const container = document.querySelector('#cat-container')
+  const container = document.querySelector("#cat-container");
 
   container.innerHTML += `
   <div class="bg-white rounded-lg overflow-hidden shadow-lg">
@@ -78,13 +77,13 @@ function createKittenCards(catData) {
               </div>
               <div class="flex justify-between">
                 <p class="text-gray-400 mt-2">⏳ Last Updated: </p>
-                <p class="text-gray-400 mt-2">Sat Jul 6 @ 10:29pm </p>
+                <p class="text-gray-400 mt-2">Sun Jul 7 @ 10:08pm </p>
               </div>
           </div>
       </div>
-  `
+  `;
 
-  catData.forEach(cat => {
+  catData.forEach((cat) => {
     let catCardsHTML = `
   <div class="bg-white rounded-lg overflow-hidden shadow-lg ">
       <a href=${cat.bigImg} target="_blank">
@@ -96,14 +95,14 @@ function createKittenCards(catData) {
               <h3 class="text-lg font-semibold text-gray-800">${cat.superlatives}</h3>
           </div>
               <p class="text-gray-600 mt-2">Weight: ${cat.weight.slice(-1)}${cat.unit}</p>
-              <p class="text-gray-600 mt-2">Gain/Loss: <span style="color: ${cat.gain >= 0 ? 'green' : 'red'}">${cat.gain}</span></p>
+              <p class="text-gray-600 mt-2">Gain/Loss: <span style="color: ${cat.gain >= 0 ? "green" : "red"}">${cat.gain}</span></p>
               <p class="text-gray-600 mt-2">${cat.desc}</p>
           </div>
       </div>
   `;
 
     container.innerHTML += catCardsHTML;
-  })
+  });
 }
 
-loadJSONForKittenCards()
+loadJSONForKittenCards();
