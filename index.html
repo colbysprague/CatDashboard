@@ -59,80 +59,83 @@
                 class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start space-x-4 mb-4"
             ></div>
 
-            <div class="">
-                <!-- Banner Card -->
+            <!-- Charts Start -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 mb-4 gap-4">
+                <!-- Podium Start -->
                 <div
-                    class="bg-white rounded-lg overflow-hidden shadow-lg shadow-md mb-4 p-4 flex justify-center flex-col"
-                >
-                    <h2 class="text-lg">We are this old</h2>
-                    <div
-                        class="grid auto-cols-max grid-flow-col gap-5 text-center"
-                    >
-                        <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span id="weeks" style="--value: ${counter}"
-                                    >10</span
-                                >
-                            </span>
-                            weeks
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span id="days" style="--value: 15">10</span>
-                            </span>
-                            days
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span id="hours" style="--value: 10">10</span>
-                            </span>
-                            hours
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span id="mins" style="--value: 24">10</span>
-                            </span>
-                            min
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 mb-4 gap-4">
-                    <div class="bg-white p-6 shadow-lg rounded-lg">
-                        <h2 class="text-xl font-semibold text-gray-800 mb-5">
-                            Kitten Weights by Day
-                        </h2>
-                        <div>
-                            <canvas height="300" id="myChart"></canvas>
-                        </div>
-                    </div>
-
-                    <!-- Podium coming soon -->
-                    <div
-                        id="podium-card"
-                        class="bg-white shadow-md rounded-lg w-full p-6"
-                    ></div>
-                </div>
-
-                <!-- Card Container -->
-                <div
-                    id="cat-container"
-                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4"
+                    id="podium-card"
+                    class="bg-white shadow-md rounded-lg w-full p-6"
                 ></div>
 
-                <!-- Gallery Link -->
-                <div
-                    class="mt-4 bg-white rounded-lg overflow-hidden shadow-lg shadow-md mb-4 p-4 flex justify-between flex-wrap items-center"
-                >
-                    <p>More pictures:</p>
-                    <button
-                        class="bg-blue-50 border border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-4 rounded"
-                        onclick="location.href='/CatDashboard/gallery'"
-                    >
-                        Go to Gallery
-                    </button>
+                <!-- Podium End -->
+                <div class="bg-white p-6 shadow-lg rounded-lg">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-5">
+                        Kitten Weights by Day
+                    </h2>
+                    <div>
+                        <canvas height="300" id="myChart"></canvas>
+                    </div>
                 </div>
             </div>
+            <!-- Chart End -->
+
+            <!-- Card Container -->
+            <div
+                id="cat-container"
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4"
+            ></div>
+            <!-- End Cat Container -->
+
+            <!-- How Old Card -->
+            <div
+                class="bg-white rounded-lg overflow-hidden shadow-lg shadow-md mb-4 p-4 flex justify-center flex-col"
+            >
+                <h2 class="text-lg">We are this old</h2>
+                <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span id="weeks" style="--value: ${counter}"
+                                >10</span
+                            >
+                        </span>
+                        weeks
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span id="days" style="--value: 15">10</span>
+                        </span>
+                        days
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span id="hours" style="--value: 10">10</span>
+                        </span>
+                        hours
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span id="mins" style="--value: 24">10</span>
+                        </span>
+                        min
+                    </div>
+                </div>
+            </div>
+            <!-- End How Old Card -->
+
+            <!-- Gallery Link -->
+            <div
+                class="mt-4 bg-white rounded-lg overflow-hidden shadow-lg shadow-md mb-4 p-4 flex justify-between flex-wrap items-center"
+            >
+                <p>More pictures:</p>
+                <button
+                    class="bg-blue-50 border border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-4 rounded"
+                    onclick="location.href='/CatDashboard/gallery'"
+                >
+                    Go to Gallery
+                </button>
+            </div>
+
+            <!-- End Gallery link -->
         </div>
 
         <!-- Banner -->
