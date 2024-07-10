@@ -146,7 +146,7 @@ function createPodiumCard(catData) {
             >
                 <span class="text-7xl text-white">🥈</span>
             </div>
-            <span class="mt-2 text-lg font-semibold whitespace-nowrap"
+            <span class="mt-2 text-xs sm:text-sm md:text-lg font-semibold whitespace-nowrap"
                 >${podiumData[1].emoji} ${podiumData[1].name}</span
             >
         </div>
@@ -157,9 +157,9 @@ function createPodiumCard(catData) {
             <div
                 class="bg-${podiumData[0].twColor} h-64 w-full flex items-center justify-center rounded-lg shadow-lg"
             >
-                <span class="text-9xl text-white">🥇</span>
+                <span class="text-8xl md:text-9xl text-white">🥇</span>
             </div>
-            <span class="mt-2 text-lg font-semibold whitespace-nowrap"
+            <span class="mt-2 text-xs sm:text-sm md:text-lg font-semibold whitespace-nowrap"
                 >${podiumData[0].emoji} ${podiumData[0].name}</span
             >
         </div>
@@ -172,7 +172,7 @@ function createPodiumCard(catData) {
             >
                 <span class="text-5xl text-white">🥉</span>
             </div>
-            <span class="mt-2 text-lg font-semibold whitespace-nowrap"
+            <span class="mt-2 text-xs sm:text-sm md:text-lg font-semibold whitespace-nowrap"
                 >${podiumData[2].emoji} ${podiumData[2].name}</span
             >
         </div>
