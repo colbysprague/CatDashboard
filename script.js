@@ -93,12 +93,12 @@ function createKittenCards(catData) {
 
   catData.forEach((cat) => {
     let catCardsHTML = `
-  <div class="bg-white rounded-lg overflow-hidden shadow-lg ">
+  <div class="bg-white rounded-lg overflow-hidden">
       <a href=${cat.bigImg} target="_blank">
           <img src="${cat.imgPath}" alt="${cat.name}" class="w-full h-48 object-cover">
       </a>
           <div class="p-4">
-          <div class="flex justify-between" >
+          <div class="flex justify-between">
               <h3 class="text-lg font-semibold text-gray-800">${cat.emoji} ${cat.name}</h3>
               <h3 class="text-lg font-semibold text-gray-800">${cat.superlatives}</h3>
           </div>
@@ -199,7 +199,9 @@ function createKittenScrollCards(catData) {
                   class="w-full h-full object-cover"
               />
           </div>
-          <div class="p-6 text-center">
+          <div class="p-6 text-center border-solid border-t-4 ${
+            cat.isKitten ? `border-${cat.twColor}` : "border-sky-500"
+          }">
               <h4 class="text-2xl font-semibold text-blue-gray-900">
                   ${cat.emoji} ${cat.name}
               </h4>
