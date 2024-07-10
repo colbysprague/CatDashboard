@@ -5,8 +5,9 @@ async function loadJSONForKittenCards() {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    createKittenCards(data);
+    // createKittenCards(data);
     createPodiumCard(data);
+    createKittenScrollCards(data);
   } catch (error) {
     console.error("Error fetching the file:", error);
   }
@@ -180,6 +181,48 @@ function createPodiumCard(catData) {
     `;
 
   podiumCard.innerHTML += podiumHTML;
+}
+
+function createKittenScrollCards(catData) {
+  const catScrollContainer = document.getElementById("cat-scroll-container");
+
+  catData.forEach((cat) => {
+    let catCardHTML = `
+      <!-- Card Start -->
+      <div
+          class="flex-none overflow-hidden rounded-lg shadow-md bg-white sm:w-96 md:w-96 lg:w-96 xl:w-96"
+      >
+          <div class="overflow-hidden h-80">
+              <img
+                  src="${cat.imgPath}"
+                  alt="profile-picture"
+                  class="w-full h-full object-cover"
+              />
+          </div>
+          <div class="p-6 text-center">
+              <h4 class="text-2xl font-semibold text-blue-gray-900">
+                  ${cat.emoji} ${cat.name}
+              </h4>
+              <div class="flex flex-col align-center">
+                  <span class="text-lg text-gray-600">
+
+                  ${cat.weight.slice(-1)}${cat.unit}
+
+                  ${
+                    cat.gain >= 0
+                      ? `<span class="text-green-700 text-sm">(+${cat.gain})</span>`
+                      : `<span class="text-red-700 text-sm">(-${cat.gain})</span>`
+                  }
+                  </span>
+                  <span class="text-xs text-gray-400">Weight</span>
+              </div>
+          </div>
+      </div>
+      <!-- Card End -->
+      `;
+
+    catScrollContainer.innerHTML += catCardHTML;
+  });
 }
 
 loadJSONForKittenCards();
