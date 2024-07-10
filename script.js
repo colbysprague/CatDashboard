@@ -190,7 +190,7 @@ function createKittenScrollCards(catData) {
     let catCardHTML = `
       <!-- Card Start -->
       <div
-          class="flex-none overflow-hidden rounded-lg shadow-md bg-white sm:w-96 md:w-96 lg:w-96 xl:w-96"
+          class="flex-none overflow-hidden rounded-lg shadow-md bg-white w-96 xs:w-96 sm:w-96 md:w-96 lg:w-96 xl:w-96"
       >
           <div class="overflow-hidden h-80">
               <img
