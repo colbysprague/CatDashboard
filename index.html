@@ -90,34 +90,48 @@
             <div
                 class="bg-white rounded-lg overflow-hidden shadow-lg shadow-md mb-4 p-4 flex justify-center flex-col"
             >
-                <h2 class="text-lg">We are this old</h2>
-                <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+                <div class="flex flex-wrap justify-between space-y-4">
                     <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span id="weeks" style="--value: ${counter}"
-                                >10</span
-                            >
-                        </span>
-                        weeks
+                        <h2 class="text-lg">We are this old</h2>
+                        <div
+                            class="grid auto-cols-max grid-flow-col gap-5 text-center"
+                        >
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span id="weeks" style="--value: ${counter}"
+                                        >10</span
+                                    >
+                                </span>
+                                weeks
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span id="days" style="--value: 15"
+                                        >10</span
+                                    >
+                                </span>
+                                days
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span id="hours" style="--value: 10"
+                                        >10</span
+                                    >
+                                </span>
+                                hours
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span id="mins" style="--value: 24"
+                                        >10</span
+                                    >
+                                </span>
+                                min
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span id="days" style="--value: 15">10</span>
-                        </span>
-                        days
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span id="hours" style="--value: 10">10</span>
-                        </span>
-                        hours
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span id="mins" style="--value: 24">10</span>
-                        </span>
-                        min
-                    </div>
+
+                    <!-- <div id="superlative-container"></div> -->
                 </div>
             </div>
             <!-- End How Old Card -->

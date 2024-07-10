@@ -8,6 +8,7 @@ async function loadJSONForKittenCards() {
     // createKittenCards(data);
     createPodiumCard(data);
     createKittenScrollCards(data);
+    createSuperlativeContainer(data);
   } catch (error) {
     console.error("Error fetching the file:", error);
   }
@@ -225,6 +226,40 @@ function createKittenScrollCards(catData) {
 
     catScrollContainer.innerHTML += catCardHTML;
   });
+}
+
+function createSuperlativeContainer(catData) {
+  let superaltiveData = `
+
+        <h3 class="text-xl font-semibold text-gray-800">🏆 Daily Superlatives</h3>
+
+        <div class="flex justify-between">
+          <p class="text-gray-600 font-bold mt-2">🐵 Chunkiest Monkey: </p>
+          <p class="text-gray-600 mt-2">
+            ${getKittenWithHighestWeightLastElement(catData).emoji}
+            ${getKittenWithHighestWeightLastElement(catData).name}
+          </p>
+        </div>
+        <div class="flex justify-between">
+          <p class="text-gray-600 font-bold mt-2">💪 Biggest Gains: </p>
+          <p class="text-gray-600 mt-2">
+          ${getKittenWithBiggestWeightGain(catData).emoji}
+          ${getKittenWithBiggestWeightGain(catData).name}
+          </p>
+        </div>
+        <div class="flex justify-between">
+          <p class="text-gray-600 font-bold mt-2">📢 Loudest Meows: </p>
+          <p class="text-gray-600 mt-2">😈 Darth Vader</p>
+        </div>
+        <div class="flex justify-between">
+          <p class="text-gray-400 mt-2">⏳ Last Updated: </p>
+          <p class="text-gray-400 mt-2">Wed Jul 10 @ 1:13pm </p>
+        </div>
+
+  `;
+
+  const superlativeContainer = document.getElementById("superlative-container");
+  superlativeContainer.innerHTML += superaltiveData;
 }
 
 loadJSONForKittenCards();
