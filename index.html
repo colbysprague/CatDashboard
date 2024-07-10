@@ -10,6 +10,7 @@
             rel="stylesheet"
         />
         <script defer src="script.js"></script>
+        <script defer src="bounce.js"></script>
         <link rel="icon" type="image/png" href="assets/caticon.png" />
         <script
             async
@@ -56,7 +57,7 @@
             <!-- New Cat Cards -->
             <div
                 id="cat-scroll-container"
-                class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start space-x-4 mb-4"
+                class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start space-x-4 mb-4 bounce-animation"
             ></div>
 
             <!-- Charts Start -->
@@ -314,4 +315,19 @@
 
         loadJSON();
     </script>
+    <style>
+        @keyframes bounce {
+            0%,
+            100% {
+                margin-left: 0;
+            }
+            50% {
+                margin-left: -10px; /* Adjust the negative margin for the bounce effect */
+            }
+        }
+
+        .bounce-animation {
+            animation: bounce 1s ease-out 1s 1; /* Adjust duration, delay, and iteration count */
+        }
+    </style>
 </html>
