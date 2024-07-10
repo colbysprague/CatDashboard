@@ -90,29 +90,20 @@
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 mb-4 gap-4">
-                    <div class="w-full h-full">
-                        <div class="bg-white p-6 shadow-lg rounded-lg">
-                            <h2 class="text-lg font-semibold text-gray-800 mb-5"></h2>
-                                Kitten Weights by Day
-                            </h2>
-                            <div>
-                                <canvas height="300" id="myChart"></canvas>
-                            </div>
+                    <div class="bg-white p-6 shadow-lg rounded-lg">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-5">
+                            Kitten Weights by Day
+                        </h2>
+                        <div>
+                            <canvas height="300" id="myChart"></canvas>
                         </div>
                     </div>
 
                     <!-- Podium coming soon -->
-
-                    <!-- <div class="w-full h-full">
-                        <div class="bg-white p-6 shadow-lg rounded-lg">
-                            <h2 class="text-lg font-semibold text-gray-800 mb-5"></h2>
-                                Podium Chart
-                            </h2>
-                            <div>
-                                <canvas height="300" id="podiumChart"></canvas>
-                            </div>
-                        </div>
-                    </div> -->
+                    <div
+                        id="podium-card"
+                        class="bg-white shadow-md rounded-lg w-full p-6"
+                    ></div>
                 </div>
 
                 <!-- Card Container -->
@@ -243,7 +234,6 @@
                 // const numDays = data[0].weight.length;
                 const numDays = 8;
                 createWeightChart(data, numDays);
-                createPodiumChart(data, numDays);
             } catch (error) {
                 console.error("Error fetching the file:", error);
             }
@@ -297,55 +287,6 @@
             });
         }
 
-        function createPodiumChart(catData) {
-            console.log(catData)
-
-            // const podiumCtx= document.getElementById("newChart").getContext("2d");
-
-            new Chart(document.getElementById("podiumChart").getContext("2d"), {
-                type: "bar",
-                data: {
-                    labels: ["Cat 1", "Cat 2", "Cat 3"],
-                    datasets: [{
-                        label: 'Number of Points',
-                        data: [1, 3, 2],
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)'
-                        ],
-                        borderColor: [
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)'
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                        plugins: {
-                            legend: {
-                                display: false
-                            }
-                        },
-                        scales: {
-                            x: {
-                                display: false
-                            },
-                            y: {
-                                display: false
-                            }
-                        },
-                        elements: {
-                            bar: {
-                                borderWidth: 0
-                            }
-                        }
-                    }
-            });
-        }
-
         loadJSON();
     </script>
-
 </html>

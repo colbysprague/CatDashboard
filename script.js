@@ -6,6 +6,7 @@ async function loadJSONForKittenCards() {
     const response = await fetch(url);
     const data = await response.json();
     createKittenCards(data);
+    createPodiumCard(data);
   } catch (error) {
     console.error("Error fetching the file:", error);
   }
@@ -116,6 +117,69 @@ function createKittenCards(catData) {
 
     container.innerHTML += catCardsHTML;
   });
+}
+
+function createPodiumCard(catData) {
+  podiumData = catData
+    .filter((cat) => cat.isKitten)
+    .sort((a, b) => {
+      let lastWeightA = a.weight[a.weight.length - 1];
+      let lastWeightB = b.weight[b.weight.length - 1];
+
+      return lastWeightB - lastWeightA;
+    });
+
+  const podiumCard = document.getElementById("podium-card");
+
+  let podiumHTML = `
+    <h2
+        class="text-xl font-semibold text-gray-800 mb-5"
+    >
+        🏆 Daily Weight Champion
+    </h2>
+      <div class="grid grid-cols-3 gap-4 items-end mx-2">
+        <!-- Second Place -->
+        <div class="flex flex-col items-center">
+            <span class="text-${podiumData[1].twColor}">${podiumData[1].weight.slice(-1)}${podiumData[1].unit}</span>
+            <div
+                class="bg-${podiumData[1].twColor} h-48 w-full flex items-center justify-center rounded-lg shadow-lg"
+            >
+                <span class="text-7xl text-white">🥈</span>
+            </div>
+            <span class="mt-2 text-lg font-semibold whitespace-nowrap"
+                >${podiumData[1].emoji} ${podiumData[1].name}</span
+            >
+        </div>
+
+        <!-- First Place -->
+        <div class="flex flex-col items-center">
+            <span class="text-${podiumData[0].twColor}">${podiumData[0].weight.slice(-1)}${podiumData[0].unit}</span>
+            <div
+                class="bg-${podiumData[0].twColor} h-64 w-full flex items-center justify-center rounded-lg shadow-lg"
+            >
+                <span class="text-9xl text-white">🥇</span>
+            </div>
+            <span class="mt-2 text-lg font-semibold whitespace-nowrap"
+                >${podiumData[0].emoji} ${podiumData[0].name}</span
+            >
+        </div>
+
+        <!-- Third Place -->
+        <div class="flex flex-col items-center">
+            <span class="text-${podiumData[2].twColor}">${podiumData[2].weight.slice(-1)}${podiumData[2].unit}</span>
+            <div
+                class="bg-${podiumData[2].twColor} h-32 w-full flex items-center justify-center rounded-lg shadow-lg"
+            >
+                <span class="text-5xl text-white">🥉</span>
+            </div>
+            <span class="mt-2 text-lg font-semibold whitespace-nowrap"
+                >${podiumData[2].emoji} ${podiumData[2].name}</span
+            >
+        </div>
+    </div>
+    `;
+
+  podiumCard.innerHTML += podiumHTML;
 }
 
 loadJSONForKittenCards();
