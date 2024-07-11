@@ -145,7 +145,7 @@ function createKittenScrollCards(catData) {
                   ${
                     cat.gain >= 0
                       ? `<span class="text-green-700 text-sm">(+${cat.gain})</span>`
-                      : `<span class="text-red-700 text-sm">(-${cat.gain})</span>`
+                      : `<span class="text-red-700 text-sm">(${cat.gain})</span>`
                   }
                   </span>
                   <span class="text-xs text-gray-400">Weight</span>

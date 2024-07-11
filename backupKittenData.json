@@ -5,7 +5,7 @@
     "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f3b2.png",
     "color": "rgb(192, 192, 192)",
     "twColor": "gray-400",
-    "imgPath": "assets/fatsdomino.jpeg",
+    "imgPath": "assets/newfats.jpeg",
     "weight": [
       232,
       238,
@@ -29,13 +29,14 @@
       440,
       453,
       462,
-      478
+      478,
+      483
     ],
     "unit": "g",
     "desc": "Biggest Kitten. Never sit still.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fatsdomino.jpeg",
     "superlatives": "",
-    "gain": 16,
+    "gain": 5,
     "isKitten": true
   },
   {
@@ -44,7 +45,7 @@
     "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f98d.png",
     "color": "rgb(0,0,0)",
     "twColor": "gray-600",
-    "imgPath": "assets/godzilla.jpeg",
+    "imgPath": "assets/newgodz.jpeg",
     "weight": [
       254,
       263,
@@ -68,13 +69,14 @@
       440,
       450,
       474,
-      485
+      485,
+      482
     ],
     "unit": "g",
     "desc": "I push my siblings around",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/godzilla.jpeg",
     "superlatives": "",
-    "gain": 11,
+    "gain": -3,
     "isKitten": true
   },
   {
@@ -83,7 +85,7 @@
     "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f608.png",
     "color": "rgb(177,72,210)",
     "twColor": "purple-600",
-    "imgPath": "assets/darthvader.jpeg",
+    "imgPath": "assets/newdarth.jpeg",
     "weight": [
       245,
       261,
@@ -107,13 +109,14 @@
       417,
       431,
       435,
-      452
+      452,
+      460
     ],
     "unit": "g",
     "desc": "Big complainer. Very loud.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
     "superlatives": "",
-    "gain": 17,
+    "gain": 8,
     "isKitten": true
   },
   {
@@ -122,7 +125,7 @@
     "emojiURL": "https://emoji.aranja.com/static/emoji-data/img-apple-160/1f680.png",
     "color": "rgb(255, 69, 0)",
     "twColor": "red-500",
-    "imgPath": "assets/fuzzlightyear.jpg",
+    "imgPath": "assets/newfuzz.jpeg",
     "weight": [
       236,
       247,
@@ -146,13 +149,14 @@
       420,
       430,
       450,
+      459,
       459
     ],
     "unit": "g",
     "desc": "I always have milk on my chin.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
     "superlatives": "",
-    "gain": 9,
+    "gain": 0,
     "isKitten": true
   },
   {
