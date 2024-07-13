@@ -23,11 +23,7 @@ def calc_weight_champs(kittenData):
 
     for kitten in kittenData:
         if kitten['isKitten']:
-            kitten.setdefault('timesWeightChamp', weightChampions[kitten['name']])
-        else:
-            kitten.setdefault('timesWeightChamp', 0)
-
-    print(weightChampions)
+            kitten['timesWeightChamp'] = weightChampions[kitten['name']]
 
     return kittenData
 

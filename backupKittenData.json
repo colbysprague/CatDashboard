@@ -31,13 +31,15 @@
       462,
       478,
       483,
-      490
+      490,
+      508
     ],
     "unit": "g",
     "desc": "Biggest Kitten. Never sit still.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fatsdomino.jpeg",
     "superlatives": "",
-    "gain": 7,
+    "timesWeightChamp": 13,
+    "gain": 18,
     "isKitten": true
   },
   {
@@ -72,13 +74,15 @@
       474,
       485,
       482,
-      510
+      510,
+      514
     ],
     "unit": "g",
     "desc": "I push my siblings around",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/godzilla.jpeg",
     "superlatives": "",
-    "gain": 28,
+    "timesWeightChamp": 10,
+    "gain": 4,
     "isKitten": true
   },
   {
@@ -113,13 +117,15 @@
       435,
       452,
       460,
-      470
+      470,
+      483
     ],
     "unit": "g",
     "desc": "Big complainer. Very loud.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/darthvader.jpeg",
     "superlatives": "",
-    "gain": 10,
+    "timesWeightChamp": 2,
+    "gain": 13,
     "isKitten": true
   },
   {
@@ -154,13 +160,15 @@
       450,
       459,
       459,
-      490
+      490,
+      504
     ],
     "unit": "g",
     "desc": "I always have milk on my chin.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/fuzzlightyear.jpg",
     "superlatives": "",
-    "gain": 31,
+    "timesWeightChamp": 0,
+    "gain": 14,
     "isKitten": true
   },
   {
@@ -176,6 +184,7 @@
     "desc": "I do not like the kittens.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/loaf_bunk.jpeg",
     "superlatives": "",
+    "timesWeightChamp": 0,
     "gain": 0,
     "isKitten": false
   },
@@ -192,6 +201,7 @@
     "desc": "Very chatty. Love my kittens.",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/mum.jpeg",
     "superlatives": "",
+    "timesWeightChamp": 0,
     "gain": 0,
     "isKitten": false
   },
@@ -208,6 +218,7 @@
     "desc": "...What kittens?",
     "bigImg": "https://raw.githubusercontent.com/colbysprague/CatDashboard/main/assets/dunk.jpeg",
     "superlatives": "",
+    "timesWeightChamp": 0,
     "gain": 0,
     "isKitten": false
   }
