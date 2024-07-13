@@ -71,6 +71,7 @@ function createPodiumCard(catData) {
         🏆 Daily Weight Champion
     </h2>
       <div class="grid grid-cols-3 gap-4 items-end mx-2">
+
         <!-- Second Place -->
         <div class="flex flex-col items-center">
             <span class="text-${podiumData[1].twColor}">${podiumData[1].weight.slice(-1)}${podiumData[1].unit}</span>
