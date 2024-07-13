@@ -142,15 +142,15 @@ function createKittenScrollCards(catData) {
                 cat.isKitten
                   ? `<span
                         class="
-                        bg-blue-100
-                        text-blue-800
+                        bg-${cat.twColor.split("-")[0] + "-100"}
+                        text-black
                         text-xs
                         font-medium
                         me-2 px-2.5
                         py-0.5 rounded-full
                         dark:bg-blue-900
                         dark:text-blue-300">
-                        🏋🏻‍♂️ ${cat.timesWeightChamp ?? 0}x Wt. Champ
+                        🏆 ${cat.timesWeightChamp ?? 0}x Wt. Champ
                         </span>`
                   : ""
               }
