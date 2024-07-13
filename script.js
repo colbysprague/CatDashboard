@@ -131,12 +131,30 @@ function createKittenScrollCards(catData) {
                   class="w-full h-full object-cover"
               />
           </div>
-          <div class="p-6 text-center border-solid border-t-4 ${
+          <div class="p-6 text-start border-solid border-t-4 ${
             cat.isKitten ? `border-${cat.twColor}` : "border-sky-500"
           }">
+          <div class="flex justify-between items-center">
               <h4 class="text-2xl font-semibold text-blue-gray-900">
                   ${cat.emoji} ${cat.name}
               </h4>
+              ${
+                cat.isKitten
+                  ? `<span
+                        class="
+                        bg-blue-100
+                        text-blue-800
+                        text-xs
+                        font-medium
+                        me-2 px-2.5
+                        py-0.5 rounded-full
+                        dark:bg-blue-900
+                        dark:text-blue-300">
+                        🏋🏻‍♂️ ${cat.timesWeightChamp ?? 0}x Wt. Champ
+                        </span>`
+                  : ""
+              }
+              </div>
               <div class="flex flex-col align-center">
                   <span class="text-lg text-gray-600">
 
